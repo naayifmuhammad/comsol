@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../comsol"
+		},
+		{
+			"path": "../server"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+.yarn-integrity
+
+# Build output
+build/
+dist/
+
+# Miscellaneous
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+coverage/
+
+# Editor and OS files
+.vscode/
+.idea/
+*.log

@@ -1,0 +1,27 @@
+.navbar-left {
+    width: 200px;
+    background-color: #333;
+    height: 100vh;
+    color: white;
+  }
+  
+  .navbar-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar-left ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .navbar-left ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-left ul li a:hover {
+    background-color: #444;
+    padding-left: 10px;
+  }
+  
