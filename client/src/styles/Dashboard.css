@@ -1,8 +1,23 @@
 .dashboard-container {
-    padding: 20px;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.dashboard-card .MuiTypography-h5 {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.dashboard-card .MuiTypography-h2 {
+  font-weight: bold;
+}
+
+.MuiLinearProgress-root {
+  height: 10px;
+  border-radius: 5px;
+}

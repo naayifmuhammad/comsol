@@ -8,16 +8,6 @@ function NavbarTop() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const localUser = localStorage.getItem('user');
-    if (localUser) {
-      setUser(JSON.parse(localUser));
-    } else {
-      // Fetch user from the server if not available in local storage
-      fetchCurrentUser();
-    }
-  }, []);
-
   const fetchCurrentUser = async () => {
     try {
       const response = await axios.get('http://localhost:5000/api/auth/current-user', { withCredentials: true });
@@ -31,6 +21,18 @@ function NavbarTop() {
       navigate('/login');
     }
   };
+
+  useEffect(() => {
+    const localUser = localStorage.getItem('user');
+    if (localUser) {
+      setUser(JSON.parse(localUser));
+    } else {
+      // Fetch user from the server if not available in local storage
+      fetchCurrentUser();
+    }
+  }, []);
+
+ 
 
   const handleLogout = async () => {
     try {
